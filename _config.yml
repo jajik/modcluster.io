@@ -1,46 +1,53 @@
 # Site wide configuration
 
-title:            Site Title
+title:            mod_cluster
 locale:           en_US
-url:
-
+url:              http://modcluster.io
 
 # Jekyll configuration
-
 permalink:   /:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+#highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
+  - github-pages
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..2
   use_coderay: false
-
+  input: GFM
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  name: mod_cluster
+  avatar: mod_cluster-200x200.png
+  bio: "Apache HTTP Server and Undertow based smart load balancer by <a href='http://mod-cluster.jboss.org/'>JBoss</a>"
+  email: mod_cluster-dev@lists.jboss.org
+  jira: MODCLUSTER
+  irc: "http://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"
+  user-forum: "https://developer.jboss.org/en/mod_cluster"
+  mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
+  dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
+  downloads: "https://github.com/Karm/mod_cluster/releases"
+  documentation: "documentation"
   disqus-shortname:
   twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: UA-71749425-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: modcluster
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username

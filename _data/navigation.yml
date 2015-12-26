@@ -1,13 +1,19 @@
 # Site navigation links
 
 - title: About
-  url: /about/
+  url: /
 
-- title: Sample Posts
-  url: /posts/
+- title: Documentation
+  url: /documentation/
 
-- title: Theme Setup
-  url: /theme-setup/
+- title: Examples
+  url: /examples/
 
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: Quick starts
+  url: /quickstarts/
+
+- title: FAQ
+  url: /faq/
+
+- title: "Change log"
+  url: /change_log/
