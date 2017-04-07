@@ -85,7 +85,10 @@ mod_cluster contains mod_ssl, therefore the warning (copied from OpenSSL [web pa
 
 ### Contributors
 <table>
-{% for contributor in site.github.contributors %}
-<tr><td><img src="{{ contributor.avatar_url }}" class="bio-photo-small" alt="{{ contributor.login }} bio photo"></td><td><a href="{{ contributor.html_url }}">{{ contributor.login }}</a></td></tr>
-{% endfor %}
+<tr><td><img src="https://github.com/jfclere.png?size=50" class="bio-photo-small" alt="jfclere bio photo"></td><td><a href="https://github.com/jfclere">Jean-Frederic Clere</a></td></tr>
+<tr><td><img src="https://github.com/rhusar.png?size=50" class="bio-photo-small" alt="rhusar bio photo"></td><td><a href="https://github.com/rhusar">Radoslav Husar</a></td></tr>
+<tr><td><img src="https://github.com/Karm.png?size=50" class="bio-photo-small" alt="Karm bio photo"></td><td><a href="https://github.com/Karm">Michal Karm Babacek</a></td></tr>
+<tr><td><img src="https://github.com/pferraro.png?size=50" class="bio-photo-small" alt="pferraro bio photo"></td><td><a href="https://github.com/pferraro">Paul Ferraro</a></td></tr>
+<tr><td><img src="https://github.com/aogburn.png?size=50" class="bio-photo-small" alt="aogburn bio photo"></td><td><a href="https://github.com/aogburn">aogburn</a></td></tr>
+<tr><td><img src="https://github.com/winfinit.png?size=50" class="bio-photo-small" alt="winfinit bio photo"></td><td><a href="https://github.com/winfinit">Roman Jurkov</a></td></tr>
 </table>

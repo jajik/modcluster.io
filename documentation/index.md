@@ -102,7 +102,7 @@ The release is comprised of the following artifacts:
 * httpd binaries for common platforms
 * Wildfly/JBoss AS/JBossWeb/Tomcat Java distribution
 
-Alternatively, you can build from source using the [Git repository]({{ site.github.url }}).
+Alternatively, you can build from source using the [mod_cluster git repository](https://github.com/modcluster/mod_cluster) and [mod_proxy_cluster git repository](https://github.com/modcluster/mod_proxy_cluster).
 
 ### Configuration
 
