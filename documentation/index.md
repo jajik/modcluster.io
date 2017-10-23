@@ -1631,11 +1631,11 @@ The DynamicLoadBalanceFactorProvider applies a time decay function to
 the loads returned by each metric. The aggregate load, with respect to
 previous load values, can be expressed by the following formula:
 
-L = (L~0~ + L~1~/D + L~2~/D^2^ + L~3~/D^3^ + ... + L~H~/D^H^) \* (1 + D + D^2^ + D^3^ + ... D^H^)
+L = (L<sub>0</sub>/D<sup>0</sup> + L <sub>1</sub>/D<sup>1</sup> + L<sub>2</sub>/D<sup>2</sup> + L<sub>3</sub>/D<sup>3</sup> + ... + L<sub>H</sub>/D<sup>H</sup>) / (1/D<sup>0</sup> + 1/D<sup>1</sup> + 1/D<sup>2</sup> + 1/D<sup>3</sup> + ... 1/D<sup>H</sup>)
 
 ... or more concisely as:
 
-L = (∑^H^~i=0~ L~i~/D^i^) \* (∑^H^~i=0~ D^i^)
+L = (∑<sup>H</sup><sub>i=0</sub> L<sub>i</sub>/D<sup>i</sup>) / (∑<sup>H</sup><sub>i=0</sub> 1/D<sup>i</sup>)
 
 ... where D = decayFactor, and H = history.
 
@@ -1647,7 +1647,7 @@ The mod_cluster load balancer expects the load factor to be an integer
 between 0 and 100, where 0 indicates max load and 100 indicates zero
 load. Therefore, the final load factor sent to the load balancer
 
-L~Final~ = 100 - (L \* 100)
+L<sub>Final</sub> = 100 - (L \* 100)
 
 While you are free to write your own load metrics, the following
 LoadMetrics are available out of the box:
