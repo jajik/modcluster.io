@@ -1,11 +1,14 @@
-- title: About
+- title: Introduction
   url: /
-
-- title: Documentation
-  url: http://docs.modcluster.io
 
 - title: Examples
   url: /examples/
 
-- title: Quick starts
+- title: Quickstarts
   url: /quickstarts/
+
+- title: Source Code
+  url: https://github.com/modcluster/mod_cluster
+
+- title: Documentation (docs.modcluster.io)
+  url: http://docs.modcluster.io

@@ -12,7 +12,8 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+
+plugins:
   - jekyll-sitemap
   - github-pages
 
@@ -21,7 +22,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  use_coderay: false
+  enable_coderay: false
   input: GFM
 
 # Site owner
@@ -35,7 +36,7 @@ owner:
   user-forum: "https://developer.jboss.org/en/mod_cluster"
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
   dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
-  downloads: "https://github.com/Karm/mod_cluster/releases"
+  downloads: "https://github.com/modcluster/mod_cluster/releases"
   documentation: "documentation"
   disqus-shortname:
   twitter: #username
