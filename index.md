@@ -10,9 +10,6 @@ image:
 
 {% include _toc.html %}
 
-**This site is work in progress** {{ site.time | date: '%Y-%m-%d' }}: Please, refer to [http://mod-cluster.jboss.org/](http://mod-cluster.jboss.org/) until the content here is complete.
-{: .notice}
-
 ---
 
 mod_cluster is an httpd-based load balancer. Like mod_jk and mod_proxy, mod_cluster uses a communication channel to forward requests 
@@ -68,11 +65,9 @@ The original concepts are described in a [wiki](http://www.jboss.org/community/d
 ### Worker side
 mod_cluster java module is provided for all the undermentioned containers:
 
-* Tomcat 6
-* Tomcat 7
-* Tomcat 8
-* JBoss AS7+
-* Wildfly
+* Tomcat 6 and newer
+* JBoss AS 7
+* WildFly 8 and newer
 
 ## Auxiliary
 

@@ -9,10 +9,7 @@ image:
 
 {% include _toc.html %}
 
-**This site is work in progress** {{ site.time | date: '%Y-%m-%d' }}: Please, refer to [http://mod-cluster.jboss.org/](http://mod-cluster.jboss.org/) until the content here is complete.
-{: .notice}
-
-# Apache HTTP Server balancer, Wildfly workers
+# Apache HTTP Server balancer, WildFly workers
 
 ## Windows
 Under construction...
@@ -20,7 +17,7 @@ Under construction...
 ## Linux
 Under construction...
 
-# Wildfly Undertow balancer, Wildfly workers
+# WildFly Undertow balancer, WildFly workers
 
 ## Windows
 Under construction...
