@@ -2,7 +2,7 @@
 
 title:            mod_cluster
 locale:           en_US
-url:              http://modcluster.io
+url:              https://modcluster.io
 
 # Jekyll configuration
 permalink:   /:categories/:title/
