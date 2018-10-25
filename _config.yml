@@ -36,7 +36,7 @@ owner:
   user-forum: "https://developer.jboss.org/en/mod_cluster"
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
   dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
-  downloads: "https://github.com/Karm/mod_cluster/releases"
+  downloads: "https://github.com/modcluster/mod_cluster/releases"
   documentation: "documentation"
   disqus-shortname:
   twitter: #username
