@@ -8,6 +8,8 @@ image:
 
 {% include _toc.html %}
 
+All of mod_cluster project modules are fully open source and are licenced mostly under [GNU Lesser General Public License v3.0](https://github.com/modcluster/mod_cluster/blob/master/LICENSE.txt).
+
 ## Container integration modules
 
 * Written in Java
