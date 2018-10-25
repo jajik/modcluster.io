@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
-gem 'jekyll', '2.4.0'
+gem 'jekyll', '3.7.4'
 gem 'jekyll-sitemap'
-gem 'octopress', '~> 3.0'
+gem 'octopress'
 gem 'json_pure'
-gem 'github-pages'
-gem 'rouge'
+gem 'github-pages', '192'
