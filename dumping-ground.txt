@@ -1,0 +1,57 @@
+
+Removed from the introduction section since the information is maintained elsewhere:
+
+
+<!--
+
+JBoss already prepares binary packages with httpd and mod_cluster so you can quickly try mod_cluster on the following platforms:
+
+* Linux x86, x64, ia64
+* Solaris x64, SPARC
+* Windows x86, x64
+* HP-UX PA-RISC, ia64
+
+
+<a markdown="0" href="{{ site.url }}/documentation" class="btn">Documentation</a> <a markdown="0" href="{{ site.owner.downloads }}" class="btn">Downloads</a>
+
+See sections [Building httpd modules](/documentation/#building-httpd-modules) and [Building worker-side components](/documentation/#building-worker-side-components) if you would like to compile from sources.
+
+
+### Contributors
+<table>
+<tr><td><img src="https://github.com/jfclere.png?size=50" class="bio-photo-small" alt="jfclere bio photo"></td><td><a href="https://github.com/jfclere">Jean-Frederic Clere</a></td></tr>
+<tr><td><img src="https://github.com/rhusar.png?size=50" class="bio-photo-small" alt="rhusar bio photo"></td><td><a href="https://github.com/rhusar">Radoslav Husar</a></td></tr>
+<tr><td><img src="https://github.com/Karm.png?size=50" class="bio-photo-small" alt="Karm bio photo"></td><td><a href="https://github.com/Karm">Michal Karm Babacek</a></td></tr>
+<tr><td><img src="https://github.com/pferraro.png?size=50" class="bio-photo-small" alt="pferraro bio photo"></td><td><a href="https://github.com/pferraro">Paul Ferraro</a></td></tr>
+<tr><td><img src="https://github.com/aogburn.png?size=50" class="bio-photo-small" alt="aogburn bio photo"></td><td><a href="https://github.com/aogburn">aogburn</a></td></tr>
+<tr><td><img src="https://github.com/winfinit.png?size=50" class="bio-photo-small" alt="winfinit bio photo"></td><td><a href="https://github.com/winfinit">Roman Jurkov</a></td></tr>
+</table>
+-->
+
+
+
+
+
+Removed from quicstarts page:
+
+# Apache HTTP Server balancer, WildFly workers
+
+## Windows
+Under construction...
+
+## Linux
+Under construction...
+
+# WildFly Undertow balancer, WildFly workers
+
+## Windows
+Under construction...
+
+
+# Apache HTTP Server balancer, Tomcat workers
+
+## Windows
+Under construction...
+
+## Linux
+Under construction...

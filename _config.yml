@@ -29,7 +29,7 @@ kramdown:
 owner:
   name: mod_cluster
   avatar: mod_cluster-200x200.png
-  bio: "Apache HTTP Server and Undertow based smart load balancer by <a href='http://mod-cluster.jboss.org/'>JBoss</a>"
+  bio: "mod_cluster is an intelligent native Apache httpd-based and pure-Java Undertow-based load-balancer"
   email: mod_cluster-dev@lists.jboss.org
   jira: MODCLUSTER
   irc: "http://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"

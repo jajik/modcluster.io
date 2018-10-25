@@ -1,8 +1,7 @@
 ---
 layout: page
-title: About mod_cluster
+title: Project mod_cluster
 tags: [about, mod_cluster, load, balancer]
-modified: 2015-12-26T14:16:08+01:00
 comments: true
 image:
   feature: header_1900x100.jpg
@@ -10,80 +9,47 @@ image:
 
 {% include _toc.html %}
 
----
+## Introduction
 
-mod_cluster is an httpd-based load balancer. Like mod_jk and mod_proxy, mod_cluster uses a communication channel to forward requests 
-from httpd to one of a set of application server nodes. Unlike mod_jk and mod_proxy, mod_cluster leverages an additional connection 
-between the application server nodes and httpd.
+Project mod_cluster is an intelligent load balancer.
+Like mod_jk and mod_proxy, mod_cluster uses a communication channel to forward requests from the load balancer to one of a set of application server nodes.
+Unlike mod_jk and mod_proxy, mod_cluster leverages an additional connection between the application server nodes and the load balancer.
 
+The application server nodes use this connection to transmit server-side load balance factors and lifecycle events
+back to load balancer via a custom set of HTTP methods, affectionately called the 
+Mod-Cluster Management Protocol (MCMP). 
+This additional feedback channel allows mod_cluster to offer a level of intelligence and granularity not found in other load balancing solutions.
 
-The application server nodes use this connection to transmit server-side load balance 
-factors and lifecycle events back to httpd via a custom set of HTTP methods, affectionately called the 
-Mod-Cluster Management Protocol (MCMP). This additional feedback channel allows mod_cluster to offer a level of 
-intelligence and granularity not found in other load balancing solutions.
-
-
-Within httpd, mod_cluster is implemented as a set of modules for httpd with mod_proxy enabled. Much of the logic 
-comes from mod_proxy, e.g. mod_proxy_ajp provides all the AJP logic needed by mod_cluster. 
-
----
-
-JBoss already prepares binary packages with httpd and mod_cluster so you can quickly try mod_cluster on the following platforms:
-
-* Linux x86, x64, ia64
-* Solaris x64, SPARC
-* Windows x86, x64
-* HP-UX PA-RISC, ia64
-
-
-<a markdown="0" href="{{ site.url }}/documentation" class="btn">Documentation</a> <a markdown="0" href="{{ site.owner.downloads }}" class="btn">Downloads</a>
-
-See sections [Building httpd modules](/documentation/#building-httpd-modules) and [Building worker-side components](/documentation/#building-worker-side-components) if you would like to compile from sources.
-
+Within Apache httpd, mod_cluster is implemented as a set of modules for httpd with enabled mod_proxy. 
+Much of the logic comes from mod_proxy, e.g. mod_proxy_ajp provides all the AJP logic needed by mod_cluster.
+A pure-Java load balancer implementation is available as part of [Undertow](http://undertow.io/).
+Container integration modules are available for [WildFly](http://wildfly.org/) (formerly known as JBoss AS), JBoss EAP and [Tomcat](http://tomcat.apache.org/).
 
 ## Advantages
-mod_cluster boasts the following advantages over other httpd-based load balancers:
+mod_cluster boasts the following advantages over other load balancers:
 
 ### Dynamic configuration of httpd workers
-Traditional httpd-based load balancers require explicit configuration of the workers available to a proxy. In mod_cluster, the bulk of the proxy's configuration resides on the application servers. The set of proxies to which an application server will communicate is determined either by a static list or using dynamic discovery via the advertise mechanism. The application server relays lifecycle events (e.g. server startup/shutdown) to the proxies allowing them to effectively auto-configure themselves. Notably, the graceful shutdown of a server will not result in a failover response by a proxy, as is the case with traditional httpd-based load balancers. 
+Traditional httpd-based load balancers require explicit configuration of the workers available to a proxy.
+In mod_cluster, the bulk of the proxy's configuration resides on the application servers.
+The set of proxies to which an application server will communicate is determined either by a static list or using dynamic discovery via the advertise mechanism.
+The application server relays lifecycle events (e.g. server startup/shutdown) to the proxies allowing them to effectively auto-configure themselves. 
+Notably, the graceful shutdown of a server will not result in a fail-over response by a proxy, as is the case with traditional httpd-based load balancers. 
 
 ### Server-side load balance factor calculation
-In contrast with traditional httpd-based load balancers, mod_cluster uses load balance factors calculated and provided by the application servers, rather than computing these in the proxy. Consequently, mod_cluster offers a more robust and accurate set of load metrics than is available from the proxy. (see Load Metrics for more) 
+In contrast with traditional load balancers, mod_cluster uses load balance factors calculated and provided by the application servers, rather than computing these in the proxy. 
+Consequently, mod_cluster offers a more robust and accurate set of load metrics than is available from the proxy.
 
 ### Fine grained web-app lifecycle control
-Traditional httpd-based load balancers do not handle web application undeployments particularly well. From the proxy's perspective requests to an undeployed web application are indistinguishable from a request for an non-existent resource, and will result in 404 errors. In mod_cluster, each server forwards any web application context lifecycle events (e.g. web-app deploy/undeploy) to the proxy informing it to start/stop routing requests for a given context to that server. 
+Traditional load balancers do not handle web application undeployments particularly well.
+From the proxy's perspective requests to an undeployed web application are indistinguishable from a request for an non-existent resource, 
+and will result in 404 errors.
+In mod_cluster, each server forwards any web application context lifecycle events (e.g. web-app deploy/undeploy) to the proxy
+informing it to start/stop routing requests for a given context to that server. 
 
 ### AJP is optional
-Unlike mod_jk, mod_cluster does not require AJP. httpd connections to application server nodes can use HTTP, HTTPS, or AJP.  
-The original concepts are described in a [wiki](http://www.jboss.org/community/docs/DOC-11431).
+Unlike mod_jk, mod_cluster does not require AJP.
+Connections to application server nodes can use HTTP, HTTPS, or AJP.  
 
-## Requirements
+## Getting started
 
-### Balancer side
-* Apache HTTP Server 2.2.15+ (legacy 2.2.8+)
-
-### Worker side
-mod_cluster java module is provided for all the undermentioned containers:
-
-* Tomcat 6 and newer
-* JBoss AS 7
-* WildFly 8 and newer
-
-## Auxiliary
-
-### Strong cryptography
-mod_cluster contains mod_ssl, therefore the warning (copied from OpenSSL [web page](https://www.openssl.org/)).
-
-
-**Warning:** Please remember that export/import and/or use of strong cryptography software, providing cryptography hooks, or even just communicating technical details about cryptography software is illegal in some parts of the world. So when you import this package to your country, re-distribute it from there or even just email technical suggestions or even source patches to the authors or other people you are strongly advised to pay close attention to any laws or regulations which apply to you. The authors of openssl are not liable for any violations you make here. So be careful, it is your responsibility.
-{: .notice}
-
-### Contributors
-<table>
-<tr><td><img src="https://github.com/jfclere.png?size=50" class="bio-photo-small" alt="jfclere bio photo"></td><td><a href="https://github.com/jfclere">Jean-Frederic Clere</a></td></tr>
-<tr><td><img src="https://github.com/rhusar.png?size=50" class="bio-photo-small" alt="rhusar bio photo"></td><td><a href="https://github.com/rhusar">Radoslav Husar</a></td></tr>
-<tr><td><img src="https://github.com/Karm.png?size=50" class="bio-photo-small" alt="Karm bio photo"></td><td><a href="https://github.com/Karm">Michal Karm Babacek</a></td></tr>
-<tr><td><img src="https://github.com/pferraro.png?size=50" class="bio-photo-small" alt="pferraro bio photo"></td><td><a href="https://github.com/pferraro">Paul Ferraro</a></td></tr>
-<tr><td><img src="https://github.com/aogburn.png?size=50" class="bio-photo-small" alt="aogburn bio photo"></td><td><a href="https://github.com/aogburn">aogburn</a></td></tr>
-<tr><td><img src="https://github.com/winfinit.png?size=50" class="bio-photo-small" alt="winfinit bio photo"></td><td><a href="https://github.com/winfinit">Roman Jurkov</a></td></tr>
-</table>
+Ready? Continue to [Getting started](/getting-started) page.
