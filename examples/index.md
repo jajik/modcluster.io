@@ -10,7 +10,7 @@ image:
 {% include _toc.html %}
 
 # Apache HTTP Server examples
-Downlaod mod_cluster sources, compile and run with your own Apache HTTP Server on Linux platform. The following demo deals with
+Download mod_cluster sources, compile and run with your own Apache HTTP Server on Linux platform. The following demo deals with
 compile dependencies and a basic setup including SELinux.
 
 [![asciicast](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f.png)](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f)
