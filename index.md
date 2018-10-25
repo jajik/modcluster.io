@@ -65,11 +65,9 @@ The original concepts are described in a [wiki](http://www.jboss.org/community/d
 ### Worker side
 mod_cluster java module is provided for all the undermentioned containers:
 
-* Tomcat 6
-* Tomcat 7
-* Tomcat 8
-* JBoss AS7+
-* Wildfly
+* Tomcat 6 and newer
+* JBoss AS 7
+* WildFly 8 and newer
 
 ## Auxiliary
 

@@ -9,7 +9,7 @@ image:
 
 {% include _toc.html %}
 
-# Apache HTTP Server balancer, Wildfly workers
+# Apache HTTP Server balancer, WildFly workers
 
 ## Windows
 Under construction...
@@ -17,7 +17,7 @@ Under construction...
 ## Linux
 Under construction...
 
-# Wildfly Undertow balancer, Wildfly workers
+# WildFly Undertow balancer, WildFly workers
 
 ## Windows
 Under construction...

@@ -17,7 +17,7 @@ compile dependencies and a basic setup including SELinux.
 
 You can skip directly to compilation on [52s mark](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f?t=52).
 
-# Wildfly examples
+# WildFly examples
 Under construction...
 
 # Tomcat examples
@@ -37,7 +37,7 @@ on a one box and a second _Host Controller_ with second server running on
 the second box. Both servers should automatically register to the
 mod_cluster load balancer running on the third box.
 
-This example is valid for JBoss AS 7.x, JBoss EAP 6.x and Apache HTTP Server 2.2.x. It will work for Wildfly application server as well.
+This example is valid for JBoss AS 7.x, JBoss EAP 6.x and Apache HTTP Server 2.2.x. It will work for WildFly application server as well.
 If you would like to use Apache HTTP Server 2.4.x, mind the slight configuration changes regarding
 `Allow from...` vs. `Requires granted`.
 
