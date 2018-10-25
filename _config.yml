@@ -37,7 +37,7 @@ owner:
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
   dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
   downloads: "https://github.com/modcluster/mod_cluster/releases"
-  documentation: "documentation"
+  documentation: "http://docs.modcluster.io"
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -66,4 +66,6 @@ owner:
   codepen: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+# https://jekyllrb.com/docs/continuous-integration/travis-ci/
+exclude: ["vendor", "lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
