@@ -197,7 +197,7 @@ Configure your Host Controller 2  ```machine2/domain/configuration/host-slave.xm
 #### Overview of the current layout
 
 <figure>
-    <a href="/images/mod_cluster-example-visual-elements-by-red-hat.png"><img src="/images/mod_cluster-example-visual-elements-by-red-hat.png"></a>
+    <a href="/images/mod_cluster-example-visual-elements-by-red-hat.png"><img src="/images/mod_cluster-example-visual-elements-by-red-hat.png" alt="Schema of the environment"></a>
     <figcaption>Clients, balancer and worker nodes.</figcaption>
 </figure>
 
