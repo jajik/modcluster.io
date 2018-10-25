@@ -9,9 +9,6 @@ image:
 
 {% include _toc.html %}
 
-**This site is work in progress** {{ site.time | date: '%Y-%m-%d' }}: Please, refer to [http://mod-cluster.jboss.org/](http://mod-cluster.jboss.org/) until the content here is complete.
-{: .notice}
-
 ## What is Advertise
 
 Advertise allows autodiscovery of httpd proxies by the cluster nodes. It is done by sending multicast messages from httpd to the cluster.

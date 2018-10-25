@@ -9,9 +9,6 @@ image:
 
 {% include _toc.html %}
 
-**This site is work in progress** {{ site.time | date: '%Y-%m-%d' }}: Please, refer to [http://mod-cluster.jboss.org/](http://mod-cluster.jboss.org/) until the content here is complete.
-{: .notice}
-
 # Apache HTTP Server examples
 Downlaod mod_cluster sources, compile and run with your own Apache HTTP Server on Linux platform. The following demo deals with
 compile dependencies and a basic setup including SELinux.
