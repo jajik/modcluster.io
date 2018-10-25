@@ -1,0 +1,16 @@
+= mod_cluster website 2.0
+
+Welcome to the new mod_cluster website!
+
+== Contributing
+
+Ensure you have ruby installed.
+
+. Run `bundle exec jekyll serve`
+. Make changes
+. Test changes at http://127.0.0.1:4000
+. Open pull request
+
+== Questions?
+
+https://lists.jboss.org/mailman/listinfo/mod_cluster-dev
