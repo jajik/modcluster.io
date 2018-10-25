@@ -27,3 +27,31 @@ See sections [Building httpd modules](/documentation/#building-httpd-modules) an
 <tr><td><img src="https://github.com/winfinit.png?size=50" class="bio-photo-small" alt="winfinit bio photo"></td><td><a href="https://github.com/winfinit">Roman Jurkov</a></td></tr>
 </table>
 -->
+
+
+
+
+
+Removed from quicstarts page:
+
+# Apache HTTP Server balancer, WildFly workers
+
+## Windows
+Under construction...
+
+## Linux
+Under construction...
+
+# WildFly Undertow balancer, WildFly workers
+
+## Windows
+Under construction...
+
+
+# Apache HTTP Server balancer, Tomcat workers
+
+## Windows
+Under construction...
+
+## Linux
+Under construction...

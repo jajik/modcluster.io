@@ -1,11 +1,11 @@
 - title: Introduction
   url: /
 
+- title: Getting started
+  url: /getting-started/
+
 - title: Examples
   url: /examples/
-
-- title: Quickstarts
-  url: /quickstarts/
 
 - title: Source Code
   url: /source-code/

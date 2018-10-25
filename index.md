@@ -49,3 +49,7 @@ informing it to start/stop routing requests for a given context to that server.
 ### AJP is optional
 Unlike mod_jk, mod_cluster does not require AJP.
 Connections to application server nodes can use HTTP, HTTPS, or AJP.  
+
+## Getting started
+
+Ready? Continue to [Getting started](/getting-started) page.
