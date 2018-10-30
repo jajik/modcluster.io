@@ -33,7 +33,6 @@ sudo: false
 # caching bundler gem packages will speed up build
 cache: bundler
 
-# Optional: disable email notifications about the outcome of your builds
+# Disable email notifications about the outcome of your builds
 notifications:
   email: false
-
