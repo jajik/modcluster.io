@@ -43,7 +43,10 @@ owner:
   facebook: #username
   google:
     plus: #username
-    analytics: UA-71749425-1
+    # TODO MODCLUSTER-696 Temporarily disable google analytics until we can make it work reasonably with Content Security Policy
+    # i.e. by updating the tracking code and setting up the policy along the lines "script-src 'self' www.google-analytics.com; img-src www.google-analytics.com;"
+    #analytics: UA-71749425-1
+    analytics:
     verify:
     ad-client:
     ad-slot:
