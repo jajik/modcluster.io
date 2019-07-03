@@ -23,7 +23,7 @@ This additional feedback channel allows mod_cluster to offer a level of intellig
 Within Apache httpd, mod_cluster is implemented as a set of modules for httpd with enabled mod_proxy. 
 Much of the logic comes from mod_proxy, e.g. mod_proxy_ajp provides all the AJP logic needed by mod_cluster.
 A pure-Java load balancer implementation is available as part of [Undertow](http://undertow.io/).
-Container integration modules are available for [WildFly](http://wildfly.org/) (formerly known as JBoss AS), JBoss EAP and Apache [Tomcat](http://tomcat.apache.org/).
+Container integration modules are available for [WildFly](https://wildfly.org) (formerly known as JBoss AS), JBoss EAP and Apache [Tomcat](https://tomcat.apache.org).
 
 ## Advantages
 mod_cluster boasts the following advantages over other load balancers:

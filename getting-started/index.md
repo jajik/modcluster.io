@@ -16,6 +16,6 @@ The simplest setup with Undertow mod_cluster proxy WildFly load balancer and two
 
 ---
 
-Continue to our [documentation](http://docs.modcluster.io/) now.
+Continue to our [documentation](https://docs.modcluster.io/) now.
 
 
