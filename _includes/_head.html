@@ -1,7 +1,6 @@
 <!-- https://infosec.mozilla.org/guidelines/web_security#content-security-policy -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https://asciinema.org https://www.google-analytics.com; script-src 'self' 'sha256-h3L/NhdJgGKWmnGRsTCb/wrduwiZ8dYXtCD6USjbTZk=' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-anQSeQoEnQnBulZOQkDOFf+e6xBIGmqh7M8YFT992co=' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; form-action 'none'; base-uri 'none';">
-<!-- See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options -->
-<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<!-- TODO move to a regular HTTP header which effectively enables "frame-ancestors 'none'" which is ignored if provided via meta tag -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' https://asciinema.org https://www.google-analytics.com; script-src 'self' 'sha256-h3L/NhdJgGKWmnGRsTCb/wrduwiZ8dYXtCD6USjbTZk=' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'sha256-CwE3Bg0VYQOIdNAkbB/Btdkhul49qZuwgNCMPgNY5zw=' 'sha256-anQSeQoEnQnBulZOQkDOFf+e6xBIGmqh7M8YFT992co=' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; form-action 'none'; base-uri 'none'; frame-ancestors 'none';">
 <!-- Provides protections for users of older web browsers that don't yet support CSP. -->
 <!-- See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection -->
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
@@ -16,7 +15,8 @@
 
 {% include _open-graph.html %}
 
-{% if site.owner.google.verify %}<!-- Webmaster Tools verfication -->
+<!-- Webmaster Tools verification -->
+{% if site.owner.google.verify %}
 <meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
 {% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
 
