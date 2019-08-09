@@ -17,7 +17,7 @@ All of mod_cluster project modules are fully open source and are licenced mostly
 
 [https://github.com/modcluster/mod_cluster](https://github.com/modcluster/mod_cluster)
 
-## httpd module source code
+## httpd modules source code
 
 * Written in C (APR)
 
@@ -25,7 +25,7 @@ All of mod_cluster project modules are fully open source and are licenced mostly
 
 ## Other sources
 
-* Documentation – contains Asciidoc format documentation for the whole mod_cluster project hosted on GitHub.
+* Documentation – contains AsciiDoc format documentation for the whole mod_cluster project hosted on GitHub.
 
 [https://github.com/modcluster/docs.modcluster.io](https://github.com/modcluster/docs.modcluster.io)
 
