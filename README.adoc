@@ -6,10 +6,12 @@ Welcome to the new mod_cluster website!
 
 Ensure you have ruby installed.
 
+. Run `bundle install` to install missing gems
 . Run `bundle exec jekyll serve`
 . Make changes
 . Test changes at http://127.0.0.1:4000
 . Open pull request
+. Wait for review and merge
 
 == Questions?
 
