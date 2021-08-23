@@ -15,4 +15,4 @@ Ensure you have ruby installed.
 
 == Questions?
 
-https://lists.jboss.org/mailman/listinfo/mod_cluster-dev
+https://github.com/modcluster/mod_cluster/discussions
