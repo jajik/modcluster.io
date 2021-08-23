@@ -1,4 +1,4 @@
-= mod_cluster website 2.0 image:https://travis-ci.org/modcluster/modcluster.io.svg?branch=master["Build Status", link="https://travis-ci.org/modcluster/modcluster.io"]
+= mod_cluster website 2.0
 
 Welcome to the new mod_cluster website!
 
