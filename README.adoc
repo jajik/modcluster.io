@@ -2,6 +2,8 @@
 
 Welcome to the new mod_cluster website!
 
+This repository contains sources for the website published at address https://modcluster.io/.
+
 == Contributing
 
 Ensure you have ruby installed.
