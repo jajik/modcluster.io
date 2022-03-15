@@ -32,7 +32,7 @@ owner:
   bio: "mod_cluster is an intelligent native Apache httpd-based and pure-Java Undertow-based load-balancer"
   email: mod_cluster-dev@lists.jboss.org
   jira: MODCLUSTER
-  irc: "https://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"
+  irc: #"https://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"
   user-forum: "https://developer.jboss.org/en/mod_cluster"
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
   dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
