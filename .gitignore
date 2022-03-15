@@ -2,3 +2,5 @@ Gemfile.lock
 _site/
 .sass-cache/
 .idea/
+.bundle/
+vendor/
