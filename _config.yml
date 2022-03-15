@@ -33,7 +33,7 @@ owner:
   email: mod_cluster-dev@lists.jboss.org
   jira: MODCLUSTER
   irc: #"https://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"
-  user-forum: "https://developer.jboss.org/en/mod_cluster"
+  user-forum: "https://github.com/modcluster/mod_cluster/discussions"
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
   dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
   downloads: "https://github.com/modcluster/mod_cluster/releases"
