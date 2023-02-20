@@ -11,7 +11,7 @@ Ensure you have ruby installed.
 . Run `bundle install` to install missing gems
 . Run `bundle exec jekyll serve`
 . Make changes
-. Test changes at http://127.0.0.1:4000
+. Test changes at http://localhost:4000
 . Open pull request
 . Wait for review and merge
 
