@@ -8,7 +8,8 @@ image:
 
 {% include _toc.html %}
 
-The simplest setup with Undertow mod_cluster proxy WildFly load balancer and two WildFly application server nodes.
+The simplest setup with Undertow mod_cluster proxy WildFly load balancer and
+two WildFly application server nodes.
 
 ---
 

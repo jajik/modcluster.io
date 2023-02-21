@@ -14,12 +14,15 @@ image:
 Sorry, this page is work in progress.
 
 # Apache HTTP Server examples
-Download mod_cluster sources, compile and run with your own Apache HTTP Server on Linux platform. The following demo deals with
-compile dependencies and a basic setup including SELinux.
+Download mod_proxy_cluster sources, compile and run with your own Apache HTTP
+Server on Linux platform. The following demo deals with compile dependencies
+and a basic setup including SELinux.
 
-[![asciicast](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f.png)](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f)
+[![asciicast](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f.png)
+ ](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f)
 
-You can skip directly to compilation on [52s mark](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f?t=52).
+You can skip directly to compilation on
+[52s mark](https://asciinema.org/a/7563u1eu6o5jlg3a0gk4wv69f?t=52).
 
 # WildFly examples
 Under construction...
@@ -32,23 +35,28 @@ Under construction...
 
 ## How do I force mod_cluster to use HTTPS instead of AJP?
 
-With JBoss AS7: [mod_cluster.conf & standalone-ha.xml](https://gist.github.com/Karm/6ac503924a1909564051)
+With JBoss AS7:
+[mod_cluster.conf & standalone-ha.xml](
+    https://gist.github.com/Karm/6ac503924a1909564051)
 
 ## JBoss AS instances in Domain mode with mod_cluster load balancer
 
-Goal: To have _Domain Controller_ and one _Host Controller_ with one server running
-on a one box and a second _Host Controller_ with second server running on
-the second box. Both servers should automatically register to the
+Goal: To have _Domain Controller_ and one _Host Controller_ with one server
+running on a one box and a second _Host Controller_ with second server running
+on the second box. Both servers should automatically register to the
 mod_cluster load balancer running on the third box.
 
-This example is valid for JBoss AS 7.x, JBoss EAP 6.x and Apache HTTP Server 2.2.x. It will work for WildFly application server as well.
-If you would like to use Apache HTTP Server 2.4.x, mind the slight configuration changes regarding
-`Allow from...` vs. `Requires granted`.
+This example is valid for JBoss AS 7.x, JBoss EAP 6.x and Apache HTTP Server
+2.2.x. It will work for WildFly application server as well.
+If you would like to use Apache HTTP Server 2.4.x, mind the slight
+configuration changes regarding `Allow from...` vs. `Requires granted`.
 
-Requirements: 3 virtual machines or physical servers, JBoss AS, Apache HTTP Server and mod_cluster distributions.
+Requirements: 3 virtual machines or physical servers, JBoss AS, Apache HTTP
+Server and mod_proxy_cluster distributions.
 
-First, we are about to install the Apache HTTP Server to act as mod_cluster load balancer. Please, note the paths,
-IP addresses and ports are arbitrary unless stated otherwise.
+First, we are about to install the Apache HTTP Server to act as
+mod_proxy_cluster load balancer. Please, note the paths, IP addresses and
+ports are arbitrary unless stated otherwise.
 
 #### Apache HTTP Server
 
