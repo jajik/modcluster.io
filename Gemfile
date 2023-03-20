@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
-gem 'jekyll', '3.7.4'
+gem 'jekyll'
 gem 'jekyll-sitemap'
 gem 'octopress'
 gem 'json_pure'
-gem 'github-pages', '197'
+gem 'github-pages'
 gem 'html-proofer'
+gem 'webrick'
+
