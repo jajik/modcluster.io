@@ -35,7 +35,9 @@ owner:
   irc: #"https://webchat.freenode.net/?channels=%23mod_cluster&uio=MT1mYWxzZSYxNj10cnVlJjk9dHJ1ZSYxMT0yMzY35"
   user-forum: "https://github.com/modcluster/mod_cluster/discussions"
   mailing-list: "https://lists.jboss.org/mailman/listinfo/mod_cluster-dev"
-  dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
+  # Disable dockerhub link - the releases are out of date.
+  # TODO We have a Quay organization - but that has no useful content  to the community yet - https://quay.io/organization/mod_cluster
+  # dockerhub: "https://hub.docker.com/r/karm/mod_cluster-master-dockerhub/"
   downloads: "https://github.com/modcluster/mod_cluster/releases"
   documentation: "https://docs.modcluster.io"
   disqus-shortname:
