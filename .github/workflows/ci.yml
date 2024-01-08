@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+  merge_group:
+    types: [ checks_requested ]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: true
+      - name: jekyll build
+        run: bundle exec jekyll build
+      - name: htmlproofer
+        run: bundle exec htmlproofer _site/ --disable-external=true
