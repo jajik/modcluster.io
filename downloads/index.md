@@ -30,5 +30,5 @@ image:
 
 * Java implementation
 
-    [http://undertow.io/downloads.html](http://undertow.io/downloads.html)
+    [https://undertow.io/downloads.html](https://undertow.io/downloads.html)
 

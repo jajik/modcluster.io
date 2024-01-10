@@ -40,7 +40,7 @@ implementation, whereas the C implementation is now in a separate repository as
 mod_proxy_cluster.
 
 A pure-Java load balancer implementation is available as part of
-[Undertow](http://undertow.io/). Container integration modules are available
+[Undertow](https://undertow.io/). Container integration modules are available
 for [WildFly](https://wildfly.org) (formerly known as JBoss AS), JBoss EAP and
 Apache [Tomcat](https://tomcat.apache.org).
 
