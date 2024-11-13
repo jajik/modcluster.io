@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Source Code
+title: Source Code Repositories
 excerpt: "Source Code"
 image:
   feature: header_1900x100.jpg
@@ -10,6 +10,7 @@ image:
 
 All mod_cluster project modules and repositories are fully open-source and are licenced
 under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+All repositories are using [Git](https://git-scm.com/) for source code management.
 
 ## Container integration modules source code
 
@@ -18,7 +19,9 @@ under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 [https://github.com/modcluster/mod_cluster](https://github.com/modcluster/mod_cluster)
 
-## Apache HTTP Server (httpd) modules source code
+## Proxy Implementations
+
+### Apache HTTP Server (httpd) modules source code
 
 * Written in C (APR) (2.x and newer)
 
@@ -28,9 +31,15 @@ under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 [https://github.com/modcluster/mod_cluster/tree/1.3.x](https://github.com/modcluster/mod_cluster/tree/1.3.x)
 
+### Undertow
+
+* Written in Java
+
+[https://github.com/undertow-io/undertow](https://github.com/undertow-io/undertow)
+
 ## Other sources
 
-* Documentation – contains AsciiDoc format documentation for the whole mod_cluster project hosted on GitHub.
+* Documentation – contains AsciiDoc format documentation for the whole mod_cluster project hosted on GitHub
 
 [https://github.com/modcluster/docs.modcluster.io](https://github.com/modcluster/docs.modcluster.io)
 
@@ -38,6 +47,6 @@ under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 [https://github.com/modcluster/ci.modcluster.io](https://github.com/modcluster/ci.modcluster.io)
 
-* Website – Jekyll sources for the modcluster.io website.
+* Website – Jekyll sources for the modcluster.io website
 
 [https://github.com/modcluster/modcluster.io](https://github.com/modcluster/modcluster.io)
