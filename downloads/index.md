@@ -10,25 +10,33 @@ image:
 
 # Container integration modules and demo
 
-* Tomcat 6 and newer
+* WildFly - mod_cluster is bundled
+
+    [https://www.wildfly.org/downloads/](https://www.wildfly.org/downloads/)
+
+* Tomcat
 
     [https://github.com/modcluster/mod_cluster/releases](https://github.com/modcluster/mod_cluster/releases)
 
-## Proxy integration modules
+## Proxy integration
 
-#### Apache httpd mod_proxy_cluster natives
+#### Apache httpd mod_proxy_cluster module
 
-* Version 2.x (current)
+* Fedora RPM
+
+    [https://packages.fedoraproject.org/pkgs/mod_proxy_cluster/mod_proxy_cluster/](https://packages.fedoraproject.org/pkgs/mod_proxy_cluster/mod_proxy_cluster/)
+
+* Version 2.x (source release)
 
     [https://github.com/modcluster/mod_proxy_cluster](https://github.com/modcluster/mod_proxy_cluster)
 
-* Version 1.3 and older
+* Version 1.3 and older (source release)
 
     [https://github.com/modcluster/mod_cluster/releases](https://github.com/modcluster/mod_cluster/releases)
 
 #### Undertow implementation
 
-* Java implementation
+* Java implementation of the proxy
 
     [https://undertow.io/downloads.html](https://undertow.io/downloads.html)
 
